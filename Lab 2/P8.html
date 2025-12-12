@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <div id="div_id">hey</div>
+   <script>
+      class Person{
+         constructor(name,age) {
+            this.name = name;
+            this.age = age;  
+         }
+         greet() {
+               return `welcome ${this.name}`;
+         }
+      }
+      let p1 = new Person("Jay",19);
+      document.getElementById("div_id").innerHTML = p1.greet();
+   </script>
+</body>
+</html>

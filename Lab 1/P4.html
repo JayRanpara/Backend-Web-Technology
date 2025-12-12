@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      let input = parseInt(prompt("Enter terms "));
+      input = input-2;
+      let arr = [];
+      let a = 0;
+      let b = 1
+      arr.push(a);
+      arr.push(b);
+      for(let i = 0; i<input ; i++) {
+         let c = a+b;
+         arr.push(c);
+         a = b;
+         b = c;
+      }
+      console.log(arr);
+   </script>
+</body>
+</html>

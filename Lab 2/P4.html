@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      //for array
+      arr1 = [10,20,30];
+      arr2 = [40,50,60];
+
+      arr3 = [...arr1,...arr2];
+
+      console.log(arr3);
+
+      //for object 
+
+      obj1 = {
+         name:"jay",
+         sem : 4,
+         spi:9.17
+      }
+      obj2 = {
+         name:"vibhu",
+         spi:9.33
+      }
+      obj = {...obj1,...obj2};
+      console.log(obj)
+   </script>
+</body>
+</html>

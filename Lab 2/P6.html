@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+   
+      //destructuring
+      //for array
+      arr = [10,20,30,40,5060];
+      let[a,,c,...temp] = arr;
+      console.log(a);
+      console.log(c);
+      console.log(temp);
+
+      //for object
+      const obj = {
+         name:"jay",
+         sem : 4
+      }  
+      let[name,sem] = obj;
+      console.log(name)
+      console.log(sem)
+      </script>
+</body>
+</html>

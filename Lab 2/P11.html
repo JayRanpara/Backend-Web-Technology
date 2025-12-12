@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <input type="checkbox" value="10"   class="input"> 10 <br>
+   <input type="checkbox" value="20" class="input"> 20 <br>
+   <input type="checkbox" value="30" class="input"> 30 <br>
+   <input type="checkbox" value="40" class="input"> 40 <br>
+
+   <div id="dv"></div>
+   <script>
+      document.getElementsByClassName(".input").addEventListner('change',(e)=>{
+        console.log(e)
+      }) 
+   </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      function cooking(val) {
+         setTimeout(()=>{
+            console.log(`Your ${val} is ready`);
+         },2000)
+      }
+      function order(val,callback) {
+         console.log("order successfully retrive")
+         callback(val);
+      }
+      order("pizza",cooking);
+   </script>
+</body>
+</html>

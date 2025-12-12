@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      let input = prompt("Enter a String");
+      input = input.toLowerCase();
+      let idx1 = input.indexOf('a');
+      let idx2 = input.lastIndexOf('a');
+      let str = "";
+      for(let i = idx1+1; i<idx2; i++) {
+         str+=input[i];
+      }
+      console.log(str);
+   </script>
+</body>
+</html>

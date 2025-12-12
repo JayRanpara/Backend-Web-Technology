@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      input = parseInt(prompt("Enter Number "));
+      temp = input;
+      let pow = 0;
+      while(temp!=0) {
+         pow++;
+         temp = Math.floor(temp/10);
+      }
+      temp2 = input;
+      result = 0;
+      while(temp2!=0) {
+         result += Math.pow(temp2%10,pow);
+         temp2 = Math.floor(temp2/10);
+      }
+      if(result == input) {
+         console.log("Armstromg Number");
+      } else {
+         console.log("Not Armstrong Number");
+      }
+   </script>
+</body>
+</html>
